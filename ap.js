@@ -1,6 +1,6 @@
 document.getElementById('button').addEventListener('click', loadData);
 
-function loadData() {
+function loadData(e) {
 	// Create an XHR Object
 	const xhr = new XMLHttpRequest();
 
@@ -38,4 +38,27 @@ function loadData() {
 
 	xhr.send();
 
+}
+
+
+
+
+
+
+/* ---------------------------------------------
+----------------------JSON----------------------
+-----------------------------------------------*/
+
+document.getElementById('button1').addEventListener('click', loadCustomer);
+
+function loadCustomer(e)	{
+	const	xhr = new XMLHttpRequest();
+
+	xhr.open('GET', 'customer.json', true);
+
+	xhr.onload = function(){
+		if(this.status === 200){
+
+		}
+	}
 }
