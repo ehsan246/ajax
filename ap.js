@@ -104,7 +104,7 @@ function loadCustomers(e)	{
 				</ul>
 				`;
 			});
-			document.getElementById('customer').innerHTML = output;
+			document.getElementById('customers').innerHTML = output;
 		}
 	}
 	xhr.send();
