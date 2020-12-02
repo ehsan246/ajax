@@ -124,7 +124,8 @@ function getJokes(e) {
 
 	xhr.onload = function() {
 		if(this.status === 200){
-			const resopnse = json.parse(this.responseText);
+			const resopnse = JSON.parse(this.responseText);
+			console.log(this.responseText);
 
 			let output = '';
 
